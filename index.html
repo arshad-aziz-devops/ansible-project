@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGINX Production Server</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:#fff;
+}
+
+.container{
+    text-align:center;
+    width:800px;
+    padding:50px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+.logo{
+    font-size:80px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:48px;
+    margin-bottom:15px;
+    color:#22c55e;
+}
+
+h2{
+    font-size:24px;
+    margin-bottom:30px;
+    color:#e2e8f0;
+}
+
+p{
+    font-size:18px;
+    color:#cbd5e1;
+}
+
+.card-container{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    flex:1;
+    padding:20px;
+    background:#1e293b;
+    border-radius:15px;
+    border:1px solid #334155;
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.footer{
+    margin-top:40px;
+    color:#94a3b8;
+    font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">🚀</div>
+
+    <h1>NGINX Successfully Deployed</h1>
+    <h2>Production Environment Ready</h2>
+
+    <p>Application deployment completed successfully using Ansible Automation.</p>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Web Server</h3>
+            <p>NGINX Running</p>
+        </div>
+
+        <div class="card">
+            <h3>Status</h3>
+            <p>Healthy ✅</p>
+        </div>
+
+        <div class="card">
+            <h3>Environment</h3>
+            <p>Production</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Powered by Ubuntu EC2 | NGINX | Ansible
+    </div>
+
+</div>
+
+</body>
+</html>

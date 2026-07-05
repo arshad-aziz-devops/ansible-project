@@ -1,0 +1,30 @@
+---
+- name: Install and Configure NGINX on Ubuntu EC2 Fleet
+  hosts: appserver
+  become: true
+
+  tasks:
+    - name: Install NGINX
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start NGINX service and enable on boot
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: COPY index.html
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
+
+  handlers:
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted
+
+
+
